@@ -48,4 +48,4 @@ doi = {https://doi.org/10.1016/j.cma.2024.117404}
 ```
 
 ### Data availability
-Further info available soon!
+The datasets used in the paper can be downloaded from [this link](https://drive.google.com/drive/folders/1IwPe_5I6W6a41XYrMVbDgzpspcl0KmXq?usp=sharing).
