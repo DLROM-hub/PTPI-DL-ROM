@@ -10,17 +10,13 @@ highly-configurable and versatile framework for operator learning,
 with a particular focus on physics-informed techniques.
 
 ### Main dependencies
-The library is based on the JAX backend of Keras 3.0 and requires
-* ```keras == 3.0.5```
-* ```jax == 0.4.25```
-* ```numpy == 1.26.4```
-* ```scipy == 1.12.0```
-* ```scikit-learn == 1.3.0```
-* ```tqdm == 4.66.4```
-* ```matplotlib == 3.8.0```
-* ```pillow == 10.2.0```
-  
-We recommend to follow throughly the instructions of [the official Keras page](https://keras.io/getting_started/) to install Keras 3.0 and its dependencies.
+The library is based on the JAX backend of Keras 3.0. We recommend to install it in a new conda environment:
+```
+conda create -y -n ptpi python=3.10
+conda activate ptpi
+pip install -r requirements.txt --no-cache-dir
+```
+As an alternative procedure, we refer to the instructions of [the official Keras page](https://keras.io/getting_started/) to install Keras 3.0 and its dependencies.
 
 ### Instructions
 To run the code examples, go to ```./ptpi/examples```, and then run the code relative to the example *example_name* with

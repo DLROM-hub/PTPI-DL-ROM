@@ -173,6 +173,3 @@ __pycache__
 
 # weights
 *.h5
-
-# text files
-*.txt
