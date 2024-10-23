@@ -142,7 +142,7 @@ class POD:
         Returns:
             The projection error.
         """
-        u_proj = self.lift(self.pod.project(u_true))
+        u_proj = self.lift(self.project(u_true))
         proj_err = np.mean(
             (np.sum(np.linalg.norm(u_proj - u_true, axis = 1)**2, axis = 0) / \
                 np.sum(np.linalg.norm(u_true, axis = 1)**2, axis = 0))**(1/2)

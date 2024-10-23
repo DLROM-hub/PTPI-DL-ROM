@@ -72,7 +72,7 @@ class LowRankDecNetwork(keras.Model):
 
 
     
-    def predict(self, mu, x):
+    def predict(self, mu, x = None):
         """ Implements the predict function.
             
         Args:

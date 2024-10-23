@@ -8,27 +8,32 @@
 # Affiliation: MOX Laboratory (Department of Mathematics, Politecnico di Milano)
 ################################################################################
 
-import matplotlib as mpl
+import matplotlib.pyplot as plt
+import matplotlib.image as img
+import matplotlib.colorbar as colorbar
+
+
+
 
 
 def im_colorbar(
-    im : mpl.image,
-    im_cax : mpl.image = None, 
+    im : img.AxesImage,
+    im_cax : img.AxesImage = None, 
     spacing = 0.01, 
     start_bottom = 0.0
-) -> mpl.colorbar:
+) -> colorbar.Colorbar:
     """ Adds a colorbar.
 
     Args:
-        im (mpl.image): The image to get vmin and vmax from.
-        im_cax (mpl.image): The image to construct the colorbar next to
+        im (img.AxesImage): The image to get vmin and vmax from.
+        im_cax (img.AxesImage): The image to construct the colorbar next to
                                    (defaults to None).
         spacing (float): The spacing between im_cax and the colorbar
         start_bottom (float): The distance from the bottom ground of im_cax and
                               the bottom ground of the colorbar
     
     Returns:
-        cbar (mpl.colorbar): The colorbar.                
+        cbar (colorbar.Colorbar): The colorbar.                
     """
 
     if im_cax == None:
@@ -37,7 +42,7 @@ def im_colorbar(
     cax = im_cax.axes.figure.add_axes(
         [l + w + spacing, b + start_bottom, 0.01, h - start_bottom]
     )
-    cbar = mpl.pyplot.colorbar(im, cax = cax)
+    cbar = plt.colorbar(im, cax = cax)
 
     return cbar
 
