@@ -2,10 +2,10 @@
 
 This repository contains the source code implementation (with examples) of the paper: 
 
-*S. Brivio, S. Fresca, A. Manzoni, [PTPI-DL-ROMs: pre-trained physics-informed deep learning-based reduced order models for nonlinear parametrized PDEs](https://arxiv.org/abs/2405.08558) (2024).*
+*S. Brivio, S. Fresca, A. Manzoni, [PTPI-DL-ROMs: pre-trained physics-informed deep learning-based reduced order models for nonlinear parametrized PDEs](https://www.sciencedirect.com/science/article/pii/S0045782524006595) (2024).*
 
 ### Purpose
-Other than providing an implementation of the PTPI-DL-ROM paradigm, the purpose of the present library is to provide the users with a low-level, 
+Other than including an implementation of the PTPI-DL-ROM paradigm, the purpose of the present library is to provide the users with a low-level, 
 highly-configurable and versatile framework for operator learning,
 with a particular focus on physics-informed techniques.
 
@@ -32,15 +32,16 @@ If the present repository and/or the original paper was useful in your research,
 please consider citing
 
 ```
-@misc{brivio2024ptpidlroms,
-      title={PTPI-DL-ROMs: pre-trained physics-informed deep learning-based reduced order models for nonlinear parametrized PDEs}, 
-      author={Simone Brivio and Stefania Fresca and Andrea Manzoni},
-      year={2024},
-      eprint={2405.08558},
-      archivePrefix={arXiv},
-      primaryClass={math.NA}
+@article{brivio2024ptpidlroms,
+title = {PTPI-DL-ROMs: Pre-trained physics-informed deep learning-based reduced order models for nonlinear parametrized PDEs},
+author = {Simone Brivio and Stefania Fresca and Andrea Manzoni},
+journal = {Computer Methods in Applied Mechanics and Engineering},
+volume = {432},
+pages = {117404},
+year = {2024},
+doi = {https://doi.org/10.1016/j.cma.2024.117404}
 }
 ```
 
 ### Data availability
-Further info available soon!
+The datasets used in the paper can be downloaded from [this link](https://drive.google.com/drive/folders/1IwPe_5I6W6a41XYrMVbDgzpspcl0KmXq?usp=sharing).
